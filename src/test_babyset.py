@@ -24,7 +24,7 @@ class TestBabySetMethods(unittest.TestCase):
         self.assertEqual(bset.size(), 4)
 
     def test_get(self):
-    	bset = BabySet([2, 4, 4])
+        bset = BabySet([2, 4, 4])
         with self.assertRaises(KeyError):
             bset.get(3)
 
