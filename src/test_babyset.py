@@ -29,10 +29,10 @@ class TestBabySetMethods(unittest.TestCase):
             bset.get(3)
 
     def test_remove(self):
-        pass
+        bset = BabySet([2, 4, 4])
+        with self.assertRaises(KeyError):
+            bset.remove(3)
 
-    def test_clear(self):
-    	pass
 
 if __name__ == '__main__':
     unittest.main()
